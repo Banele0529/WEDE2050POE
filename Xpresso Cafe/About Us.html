@@ -1,0 +1,156 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Xpresso Cafe, its story, vision, mission and values.">
+    <link rel="stylesheet" href="CSS/Stylesheet.CSS">
+    <title>About Us | Xpresso Cafe</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Xpresso Cafe Logo">
+            </div>
+
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="About Us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="Contact Us.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>About Xpresso</h1>
+            <p>Our story, vision, mission and values.</p>
+        </section>
+
+        <section class="about">
+            <h2>Our Story</h2>
+
+            <p>
+                Xpresso Café is a South African coffee franchise founded in 2016 by
+                husband-and-wife entrepreneurs Nicolene and Tomer Elhadad. Their first
+                store opened in Durbanville, Cape Town, with the aim of making quality
+                coffee and treats affordable and accessible to everyone. The business
+                originally sold every item on its menu for R10, which helped the brand
+                quickly attract customers. Xpresso Café later expanded through
+                franchising and grew into a national coffee brand with stores across
+                South Africa. The founders' vision was to give people the opportunity
+                to enjoy good-quality coffee without having to spend a lot of money.
+            </p>
+        </section>
+
+        <section class="about-tabs-section">
+            <h2>Discover What We Stand For</h2>
+            <p>Choose a topic below to learn more about Xpresso Café.</p>
+
+            <div class="about-tabs" role="tablist" aria-label="About Xpresso Cafe">
+                <button
+                    class="about-tab active"
+                    id="visionTab"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="visionPanel">
+                    Our Vision
+                </button>
+
+                <button
+                    class="about-tab"
+                    id="missionTab"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="missionPanel"
+                    tabindex="-1">
+                    Our Mission
+                </button>
+
+                <button
+                    class="about-tab"
+                    id="valuesTab"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="valuesPanel"
+                    tabindex="-1">
+                    Our Values
+                </button>
+            </div>
+
+            <div class="about-tab-content">
+                <div
+                    class="about-panel"
+                    id="visionPanel"
+                    role="tabpanel"
+                    aria-labelledby="visionTab">
+                    <h3>Our Vision</h3>
+                    <p>
+                        Xpresso Café's official vision is to expand throughout South Africa
+                        and eventually across international borders. The organisation has
+                        stated an intention to open another 100 stores over a five-year period.
+                    </p>
+                </div>
+
+                <div
+                    class="about-panel"
+                    id="missionPanel"
+                    role="tabpanel"
+                    aria-labelledby="missionTab"
+                    hidden>
+                    <h3>Our Mission</h3>
+                    <p>
+                        "To grow the coffee culture inside South Africa so that everyone can
+                        enjoy a great cup of coffee every single day."
+                    </p>
+                </div>
+
+                <div
+                    class="about-panel"
+                    id="valuesPanel"
+                    role="tabpanel"
+                    aria-labelledby="valuesTab"
+                    hidden>
+                    <h3>Our Values</h3>
+
+                    <div class="value-grid">
+                        <div class="value-card">
+                            <h4>Quality</h4>
+                            <p>Providing quality coffee, food and treats.</p>
+                        </div>
+
+                        <div class="value-card">
+                            <h4>Affordability</h4>
+                            <p>Making great coffee accessible to everyone.</p>
+                        </div>
+
+                        <div class="value-card">
+                            <h4>Community</h4>
+                            <p>Creating welcoming spaces for customers.</p>
+                        </div>
+
+                        <div class="value-card">
+                            <h4>Service</h4>
+                            <p>Giving customers friendly and helpful service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ST10505912</p>
+    </footer>
+
+    <script src="JS/about.js"></script>
+</body>
+</html>

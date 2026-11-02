@@ -1,0 +1,206 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the coffee, beverages, food and treats available at Xpresso Cafe.">
+    <link rel="stylesheet" href="CSS/Stylesheet.CSS">
+    <title>Services | Xpresso Cafe</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Xpresso Cafe Logo">
+            </div>
+
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="About Us.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="Contact Us.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Our Services</h1>
+            <p>Coffee, food and drinks for everyone.</p>
+        </section>
+
+        <section class="service-section">
+            <h2>Coffee &amp; Drinks</h2>
+
+            <div class="service-images">
+                <div class="service-image">
+                    <img src="images/coffee.jpeg" alt="Coffee">
+                    <h3>Coffee</h3>
+                </div>
+
+                <div class="service-image">
+                    <img src="images/drinks.jpeg" alt="Drinks">
+                    <h3>Drinks</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section alternate">
+            <h2>Food &amp; Treats</h2>
+
+            <div class="service-images">
+                <div class="service-image">
+                    <img src="images/treats.jpeg" alt="Treats">
+                    <h3>Treats</h3>
+                </div>
+
+                <div class="service-image">
+                    <img src="images/food.jpeg" alt="Food">
+                    <h3>Food</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Our Menu</h2>
+            <p>Search for your favourite item or filter the menu by category.</p>
+
+            <div class="menu-controls">
+                <label for="menuSearch">Search menu:</label>
+                <input
+                    type="search"
+                    id="menuSearch"
+                    placeholder="Search for coffee, tea, sandwiches..."
+                >
+
+                <label for="categoryFilter">Filter by category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All categories</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="beverages">Beverages</option>
+                    <option value="food">Food &amp; Treats</option>
+                </select>
+            </div>
+
+            <p id="menuResult" class="menu-result" aria-live="polite">
+                Showing all menu items.
+            </p>
+
+            <div class="menu-grid" id="menuGrid">
+
+                <div class="menu-card" data-category="coffee">
+                    <h3>Coffee</h3>
+                    <p class="price">R12 each</p>
+                    <ul>
+                        <li data-search="espresso">Espresso</li>
+                        <li data-search="americano">Americano</li>
+                        <li data-search="cappuccino">Cappuccino</li>
+                        <li data-search="cafe latte">Café Latte</li>
+                        <li data-search="cafe mocha">Café Mocha</li>
+                        <li data-search="flavoured coffees">Flavoured coffees</li>
+                    </ul>
+                </div>
+
+                <div class="menu-card" data-category="beverages">
+                    <h3>Beverages</h3>
+                    <p class="price">R12 each</p>
+                    <ul>
+                        <li data-search="tea">Tea</li>
+                        <li data-search="chai latte">Chai Latte</li>
+                        <li data-search="hot chocolate">Hot chocolate</li>
+                        <li data-search="fresh juices">Fresh juices</li>
+                        <li data-search="cold drinks">Cold drinks</li>
+                        <li data-search="water">Water</li>
+                    </ul>
+                </div>
+
+                <div class="menu-card" data-category="food">
+                    <h3>Food &amp; Treats</h3>
+                    <p class="price">R12 each</p>
+                    <ul>
+                        <li data-search="sandwiches">Sandwiches</li>
+                        <li data-search="pastries">Pastries</li>
+                        <li data-search="pies">Pies</li>
+                        <li data-search="doughnuts">Doughnuts</li>
+                        <li data-search="other baked products">Other baked products</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p id="noMenuResults" class="no-results" hidden>
+                Sorry, no menu items match your search.
+            </p>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <p>Select a question to view its answer.</p>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Does Xpresso Cafe serve coffee?</summary>
+                    <p>Yes! We offer a selection of coffee, including espresso, cappuccino and café latte.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Does Xpresso Cafe offer breakfast?</summary>
+                    <p>Yes, we offer food options suitable for breakfast.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Does Xpresso Cafe have takeaway options?</summary>
+                    <p>Yes, customers can order food and drinks to take away.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Does Xpresso Cafe serve cold drinks?</summary>
+                    <p>Yes, our beverage selection includes cold drinks and fresh juices.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Does Xpresso Cafe have seating for customers?</summary>
+                    <p>Yes, customers can enjoy their food and drinks at the café.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="hours-section">
+            <h2>Store Hours</h2>
+
+            <div class="table-container">
+                <table class="hours-table">
+                    <tr>
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+
+                    <tr>
+                        <td>8 am – 5 pm</td>
+                        <td>7:30 am – 6 pm</td>
+                        <td>7:30 am – 6 pm</td>
+                        <td>7:30 am – 6 pm</td>
+                        <td>7:30 am – 6 pm</td>
+                        <td>7:30 am – 6 pm</td>
+                        <td>8 am – 6 pm</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ST10505912</p>
+    </footer>
+
+    <script src="JS/services.js"></script>
+</body>
+</html>
